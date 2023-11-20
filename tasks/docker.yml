@@ -1,0 +1,10 @@
+---
+- hosts: Ubuntu
+  become: true
+  tasks:
+    - name: Include tasks from install.yml
+      include_tasks: install.yml
+
+    - name: Include tasks from configure.yml
+      include_tasks: configure.yml
+
